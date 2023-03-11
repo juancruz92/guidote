@@ -196,14 +196,12 @@ p {
     padding-left: 0;
   }
   .hero-main-container {
-    min-height: 600px;
+    width: 100%;
     background-position: 65%;
     background-image: url("media/images/piano-keys-studio-main.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
     background-attachment: fixed, scroll;
-    
   }
 }
 
