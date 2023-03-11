@@ -202,7 +202,6 @@ p {
     background-image: url("media/images/piano-keys-studio-main.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll;
   }
 }
 
