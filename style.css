@@ -198,10 +198,8 @@ p {
   .hero-main-container {
     width: 100%;
     min-height: 600px;
-    background-position: 65%;
-    background-image: url("media/images/piano-keys-studio-main-mobile.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: none;
+    background-color: black;
   }
 }
 
