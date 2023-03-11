@@ -1,0 +1,399 @@
+/* COLOR PALLETTE
+Orange #2A6C98
+Blue #2a6c98
+Grey Blue #93B7BE
+Light Bg #efebe5
+Reisin Black #211A1E
+
+*/
+
+/* I USED CLASSES AS IDS INSTEAD OF THINKING OF GENERAL PATTERNS THAT WOULD REPEAT */
+
+body {
+  margin: 0px;
+  font-family: quicksand;
+  background-color: #efebe5
+}
+
+
+.header {
+  background-color: #2a6c98;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed
+  
+}
+
+.hero-main-container {
+  /* margin-top: 60px; */
+  min-height: 900px;
+  /* IMPROVE THIS MIN HEIGHT PROPERTY!!!!! */
+
+  background-image: url('media/images/piano-keys-studio-main.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed, scroll;
+  
+
+  display: flex;
+  flex-direction: column;
+  padding: 30px
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.47);
+  padding-top: 100px;
+  padding-left: 50px
+}
+
+h2 {
+  padding: 0.83em;
+  margin: 0;
+}
+
+.hero-h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.47);
+  padding-top: 50px;
+  padding-left: 60px
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-block-start: 0;
+}
+
+.section-divider {
+  height: 80px;
+  width: 100%;
+  background-color: #211A1E
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 2.75rem;
+  text-align: center;
+  text-shadow: 2px 2px rgba(159, 159, 159, 0.47);
+  margin-bottom: 40px;
+}
+
+.bio-image-text-container {
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 100px
+}
+
+
+
+.bio-image-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 5%
+}
+.bio-image {
+  max-width: 50%;
+  min-width: 200px
+}
+
+.bio-text {
+  width: 50%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.bio-inner-text{
+  max-width: 60%
+}
+
+@media (max-width: 1400px) {
+  
+  .bio-image-text-container {
+    
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .bio-image-container {
+    width: 50%;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+    padding-bottom: 55px
+  }
+  
+  .bio-text {
+    width: 50%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .bio-inner-text{
+    max-width: none
+  }
+}
+
+@media (max-width: 768px) {
+  .bio-inner-text {
+    font-size: 1.25rem;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    
+    padding-top: 150px;
+    padding-left: 50px
+  }
+  
+  .hero-h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.47);
+    padding-top: 50px;
+    padding-left: 60px
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+}
+
+@media (max-width: 481px) {
+  .bio-text {
+    width: 80%
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.47);
+    padding-top: 150px;
+    padding-left: 0
+  }
+  
+  .hero-h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.47);
+    padding-top: 50px;
+    padding-left: 0
+  }
+  .hero-main-container {
+    
+    min-height: 600px;
+    background-position: 65%
+}
+}
+
+.bg-dark {
+  background-color: #211A1E;
+  color: white;
+}
+
+.bg-light {
+  background-color: #efebe5;
+  color: black
+}
+
+.bg-blue {
+  background-color: #93B7BE
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.white-text {
+  color: white;
+}
+
+.black-text {
+  color: black
+}
+
+.text-shadow-black {
+  text-shadow: 2px 2px black;
+}
+
+.text-shadow-grey {
+  text-shadow: 2px 2px rgba(159, 159, 159, 0.47)
+}
+
+.grid-videos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 160px;
+  /* gap: 35px */
+  row-gap: 40px
+
+}
+
+@media (max-width: 1250px) {
+  .grid-videos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+
+
+.title-video-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 60px
+}
+
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 30px;
+  
+  
+}
+
+@media (max-width: 600px) {
+  .grid-videos-container {
+    height: 0%;
+	padding-top: 0;
+	padding-bottom: 15%;
+  margin: 0 20px;
+	position: relative;
+  }
+  iframe[src*=youtube] {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-bottom: 10px;
+  }
+  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .section-title {
+    font-size: calc(1.325rem + .9vw)
+  }
+}
+
+
+
+.iframe-container-shorts {
+  display: block;
+  overflow: hidden;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+.iframe-container-spotify {
+  margin: 30px 0
+}
+
+
+.audiovisual-main-container {
+  background-color: #93B7BE;
+}
+
+.navbar {
+  background-color: #2a6c98;
+  --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+  --bs-navbar-toggler-border-color: rgba(255, 255, 255, 1);
+  
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.navbar-nav {
+  color: white
+}
+
+.navbar-brand, .nav-link {
+  color: white
+}
+
+.navbar-brand {
+  padding: 0 30px;
+  letter-spacing: .15rem
+}
+
+
+
+@media (max-width: 396px) {
+  .navbar-brand {
+    padding-left: 10px;
+    padding-right: 0;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .md-contact-info{
+    font-size: 1.25rem;
+  }
+  .sm-contact-info {
+    font-size: 1rem;
+  }
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 650px
+}
+
+.carousel-control-prev {
+  left: -12%;
+  position: absolute;
+  
+}
+.carousel-control-next {
+  right: -12%;
+  position: absolute;
+  
+}
