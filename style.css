@@ -207,7 +207,8 @@ p {
   .hero-main-container {
     
     min-height: 600px;
-    background-position: 65%
+    background-position: 65%;
+    background-size: cover
 }
 }
 
